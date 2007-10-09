@@ -1,5 +1,5 @@
 %define name pybliographer
-%define version 1.2.10
+%define version 1.2.11
 %define release %mkrel 1
 Summary: 	A framework for working with bibliographic databases
 Name:           %{name}
@@ -8,10 +8,11 @@ Release:        %{release}
 License:	GPL
 Group:		Office
 Url:            http://pybliographer.org/
-Source: 	http://prdownloads.sourceforge.net/%name/%{name}-%{version}.tar.bz2
+Source: 	http://prdownloads.sourceforge.net/%name/%{name}-%{version}.tar.gz
 Source1:        %{name}-16.png
 Source2:        %{name}-32.png
 Source3:        %{name}-48.png
+Patch: pybliographer-1.2.11-icon.patch
 Buildrequires:	pygtk2.0-libglade
 Buildrequires:	python-bibtex
 Buildrequires:	gnome-python
@@ -51,6 +52,7 @@ to a nice hierarchical search mechanism.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %configure2_5x
