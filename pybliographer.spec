@@ -21,6 +21,7 @@ Buildrequires:	gnome-python-gconf
 BuildRequires:	docbook-utils
 BuildRequires:  scrollkeeper
 BuildRequires:  desktop-file-utils
+BuildRequires:  intltool
 Requires:	gnome-python
 Requires:	gnome-python-gconf
 Requires:	gnome-python-gnomevfs
