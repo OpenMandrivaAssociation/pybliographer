@@ -53,6 +53,7 @@ to a nice hierarchical search mechanism.
 %prep
 %setup -q
 %patch -p1
+rm -f pybliographic.desktop
 
 %build
 %configure2_5x
