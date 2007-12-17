@@ -29,7 +29,6 @@ Requires:	pygtk2.0-libglade
 Requires:	python-bibtex >= 1.1.93.1
 Requires(post): desktop-file-utils scrollkeeper
 Requires(postun): desktop-file-utils scrollkeeper
-BuildRoot:      %{_tmppath}/%{name}-%{version}-buildroot
 BuildArch:	noarch
 
 %description
