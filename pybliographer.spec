@@ -70,10 +70,6 @@ chmod -x $RPM_BUILD_ROOT%{_datadir}/pybliographer/*.py
 %{find_lang} %{name} --with-gnome --all-name
 
 # menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{_bindir}/pybliographic" title="Pybliographic" icon="pybliographic.png" longtitle="A tool for managing bibliographic databases" needs="x11" section="Office/Publishing" mimetypes="text/x-bibtex" startup_notify="true" xdg="true"
-EOF
 desktop-file-install --vendor="" \
   --remove-category="Application" \
   --add-category="X-MandrivaLinux-Office-Publishing" \
@@ -109,7 +105,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/*
 %{_datadir}/omf/pybliographer/pybliographer-C.omf
 %{_datadir}/pybliographer
-%{_menudir}/%{name}
 %{_iconsdir}/pybliographic.png
 %{_miconsdir}/pybliographic.png
 %{_liconsdir}/pybliographic.png
