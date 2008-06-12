@@ -83,15 +83,19 @@ install -m 644 %{SOURCE1} $RPM_BUILD_ROOT%{_miconsdir}/pybliographic.png
 install -m 644 %{SOURCE2} $RPM_BUILD_ROOT%{_iconsdir}/pybliographic.png
 install -m 644 %{SOURCE3} $RPM_BUILD_ROOT%{_liconsdir}/pybliographic.png
 
+%if %mdkversion < 200900
 %post
 %{update_menus}
 %update_desktop_database
 %update_scrollkeeper
+%endif
 
+%if %mdkversion < 200900
 %postun
 %{clean_menus}
 %clean_desktop_database
 %clean_scrollkeeper
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
