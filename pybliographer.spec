@@ -1,6 +1,6 @@
 %define name pybliographer
-%define version 1.2.11
-%define release %mkrel 4
+%define version 1.2.12
+%define release %mkrel 1
 Summary: 	A framework for working with bibliographic databases
 Name:           %{name}
 Version:        %{version}
