@@ -1,6 +1,6 @@
 %define name pybliographer
-%define version 1.2.12
-%define release 4
+%define version 1.4.0
+%define release 1
 Summary: 	A framework for working with bibliographic databases
 Name:           %{name}
 Version:        %{version}
@@ -22,6 +22,8 @@ BuildRequires:	docbook-utils
 BuildRequires:  scrollkeeper
 BuildRequires:  desktop-file-utils
 BuildRequires:  intltool
+BuildRequires:  gettext
+BuildRequires:  pkgconfig(pygtk-2.0)
 Requires:	gnome-python
 Requires:	gnome-python-gconf
 Requires:	gnome-python-gnomevfs
