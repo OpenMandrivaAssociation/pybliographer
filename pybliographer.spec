@@ -12,7 +12,7 @@ Source: 	http://prdownloads.sourceforge.net/%name/%{name}-%{version}.tar.gz
 Source1:        %{name}-16.png
 Source2:        %{name}-32.png
 Source3:        %{name}-48.png
-Patch: pybliographer-1.2.11-icon.patch
+#Patch: pybliographer-1.2.11-icon.patch
 Buildrequires:	pygtk2.0-libglade
 Buildrequires:	python-bibtex
 Buildrequires:	gnome-python
@@ -54,7 +54,7 @@ to a nice hierarchical search mechanism.
 
 %prep
 %setup -q
-%patch -p1
+#patch -p1
 rm -f pybliographic.desktop
 
 %build
