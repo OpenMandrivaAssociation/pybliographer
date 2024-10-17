@@ -7,7 +7,7 @@ Version:        %{version}
 Release:        %{release}
 License:	GPL
 Group:		Office
-Url:            http://pybliographer.org/
+Url:            https://pybliographer.org/
 Source: 	http://prdownloads.sourceforge.net/%name/%{name}-%{version}.tar.gz
 Source1:        %{name}-16.png
 Source2:        %{name}-32.png
